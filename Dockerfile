@@ -7,21 +7,19 @@ RUN apt-get install -y supervisor nginx
 
 # Copy and set up the app
 RUN mkdir /app
-RUN pip install virtualenv
-RUN mkdir -p ~/.jupyter
-COPY jupyter_notebook_config.py ~/.jupyter/
-COPY config /app/
+RUN mkdir /app/config
+RUN mkdir /app/notebooks
+COPY config/nginx.conf /etc/nginx/sites-available/default
+COPY config/supervisor.conf /etc/supervisor/conf.d/
+COPY config/jupyter_notebook_config.py /app/config/
 COPY Makefile /app/
 COPY requirements.txt /app/
-COPY notebooks /app/
+
+RUN pip install --upgrade pip
+RUN pip install virtualenv
 RUN cd /app && make
 
-# Configure nginx
-RUN mv /app/config/nginx.conf /etc/nginx/sites-available/default
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf 
-
-# Configure supervisor
-RUN mv /app/config/supervisor.conf /etc/supervisor/conf.d/
 
 EXPOSE 40010
 CMD ["supervisord", "-n"]

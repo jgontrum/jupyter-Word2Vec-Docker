@@ -31,5 +31,5 @@ docker-start: folders
 	docker-compose up
 
 start:
-	env/bin/jupyter notebook --port=8888 --no-browser --ip=0.0.0.0 --notebook-dir ./notebooks
+	env/bin/jupyter notebook --port=8888 --no-browser --ip=0.0.0.0 --notebook-dir ./notebooks --config /app/config/jupyter_notebook_config.py
 
