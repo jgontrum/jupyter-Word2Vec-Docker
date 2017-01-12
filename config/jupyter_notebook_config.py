@@ -45,7 +45,7 @@
 #  Use '*' to allow any origin to access your server.
 #  
 #  Takes precedence over allow_origin_pat.
-c.NotebookApp.allow_origin = '*'
+# c.NotebookApp.allow_origin = '*'
 
 ## Use a regular expression for the Access-Control-Allow-Origin header
 #  
@@ -115,7 +115,7 @@ c.NotebookApp.allow_origin = '*'
 #  completely without authentication. These services can disable all
 #  authentication and security checks, with the full knowledge of what that
 #  implies.
-c.NotebookApp.disable_check_xsrf = False
+c.NotebookApp.disable_check_xsrf = True
 
 ## Whether to enable MathJax for typesetting math/TeX
 #  
