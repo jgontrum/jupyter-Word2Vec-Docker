@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  jupyter:
+    build: ./
+    ports:
+      - "127.0.0.1:40010:40010"
+    volumes:
+      - /data/jupyter/notebooks:/app/notebooks
+      - /data/jupyter/auth:/app/config/auth
+    restart: always
+
