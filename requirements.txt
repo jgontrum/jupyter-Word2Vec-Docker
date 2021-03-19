@@ -17,7 +17,7 @@ ipython==5.1.0
 ipython-genutils==0.1.0
 ipywidgets==5.2.2
 -e git://github.com/jgontrum/jgsnippets.git@a23bd196cc24b8163d83d9daca3fb60bc67eabcf#egg=jgsnippets
-Jinja2==2.9.3
+Jinja2==2.11.3
 jsonschema==2.5.1
 jupyter==1.0.0
 jupyter-client==4.4.0
