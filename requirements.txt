@@ -62,6 +62,6 @@ thinc==5.0.8
 tornado==4.4.2
 traitlets==4.3.1
 ujson==1.35
-urllib3==1.19.1
+urllib3==1.26.5
 wcwidth==0.1.7
 widgetsnbextension==1.2.6
