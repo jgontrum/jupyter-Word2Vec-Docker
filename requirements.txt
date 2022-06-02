@@ -10,7 +10,7 @@ decorator==4.0.10
 elasticsearch==5.0.1
 entrypoints==0.2.2
 gensim==0.13.4.1
-html5lib==0.9999999
+html5lib==0.99999999
 ipykernel==4.5.2
 ipyparallel==6.0.0
 ipython==5.1.0
