@@ -30,7 +30,7 @@ murmurhash==0.26.4
 nbconvert==5.0.0
 nbformat==4.2.0
 notebook==4.3.1
-numpy==1.11.3
+numpy==1.21.0
 pandocfilters==1.4.1
 pathlib==1.0.1
 pexpect==4.2.1
